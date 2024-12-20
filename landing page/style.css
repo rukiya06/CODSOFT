@@ -1,0 +1,118 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family:'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    line-height:1.6;
+    color:#333;
+}
+.hero{
+    /* background: linear-gradient(135deg, #4a90e2,#50e3c2); */
+    background-image: url('web-development.jpg');
+    background-size: cover;
+    background-position: center;
+    color:white;
+    text-align: center;
+    padding:50px 20px;
+    min-height: 400px;
+    position: relative;
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+.hero h1{
+    font-size:3rem;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+.hero-subheading{
+    display: block;
+    font-size: 1.8rem;
+    color:white;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+.hero .cta-button{
+    box-sizing: border-box;
+    background: #ff5733;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    width: auto;
+    max-width: 300px;
+    transition: background 0.3s ease;
+    margin: 10px;
+    position: relative;
+    z-index: 2;
+}
+.hero .cta-button:hover{
+    background: #ff4500;
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #4a90e2;
+    font-size: 2rem;
+    text-align: center;
+}
+.features-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.feature-item{
+    display: 1 1 calc(33.33% - 40px);
+    margin: 20px;
+    padding: 20px;
+    max-width: 300px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+}
+.feature-item:hover{
+    transform: translate(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.feature-item img{
+    max-width: 100px;
+    width: 100%;
+    height: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+footer{
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding:20px 10px;
+    font-size: 0.9rem;
+}
+footer nav a{
+    color: #ff5733;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+footer nav a:hover{
+    color:#50e3c2
+}
